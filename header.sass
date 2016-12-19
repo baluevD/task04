@@ -1,0 +1,126 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+.wrapper
+	height: 1000px
+	background: url('/img/bg.jpg') no-repeat
+	background-size: cover
+	margin: 0 auto
+	padding: 20px 0
+
+@import "./libs/font-awesome/css/font-awesome.min"
+
+.pinterest-thumb-widget
+	height: auto
+	margin: 0 auto
+	border-radius: 3px
+	border: 1px solid #D5DBDC
+	color: #3F4041
+	box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.75)
+	background: #fff
+	&__block-img
+		&--main-photo
+			width: 100%
+			height: auto
+			border-radius: 3px 3px 0 0
+	&__block-info
+		padding: 20px
+		border-bottom: 1px solid #EBECED
+		+clearfix()
+		&--name
+			color: #3F4041
+			font-size: 16px
+			line-height: 16px
+			margin: 0
+			padding-bottom: 8px
+		&--rating
+			color: #B7B8B9
+			line-height: 13px
+			margin: 0
+			padding: 0
+			list-style: none
+			&__item
+				float: left
+				font-size: 13px
+				color: #999999
+				margin: 0
+				padding: 0
+				padding-right: 20px
+				list-style: none
+				&__block-img
+					display: inline-block
+					line-height: 15px
+					&--img
+						float: left
+						height: 15px
+						padding-right: 4px
+					&--img:last-child
+						padding-right: 0
+					&--caption
+						float: left
+	&__block-link
+		margin: 0
+		padding: 0
+		line-height: 50px
+		height: 50px
+		font-size: 13px
+		padding-left: 20px
+		color: #999999
+		border-bottom: 1px solid #EBECED
+		&__ref
+			text-decoration: none
+			color: black
+	&__block-comments
+		background: #EFF0F1
+		padding: 20px
+		&__block-user-comment
+			&__left-comment
+				+clearfix()
+				&__p
+					margin: 0
+					padding: 0
+					line-height: 15px
+					&--name
+						font-size: 14px
+						color: #383838
+					&--text
+						font-size: 13px
+						color: #4D4D4D
+			&__fresh-comment
+				display: block
+				height: auto
+				+clearfix()
+				&__input-form
+					float: left
+					width: calc(100% - 40px)
+					&--text
+						border: 1px solid #CCCDCE
+						border-radius: 2px
+						width: 100%
+						font-size: 13px
+						padding: 10px
+						min-height: 60px
+						// for check
+						// max-height: 200px
+						max-height: 300px
+						resize: none
+						-ms-overflow-style: -ms-autohiding-scrollbar
+					&--btn
+						border: 1px solid #B81820
+						color: #fff
+						background: #D31C25
+						padding: 5px 10px
+						float: right
+						border-radius: 2px
+						font-size: 14px
+			&--photo
+				width: auto
+				height: 100%
+				float: left
+				padding-right: 10px
+				padding-bottom: 10px
+
+
+
+
